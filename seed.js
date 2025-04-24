@@ -7,9 +7,8 @@ async function main() {
     update: {},
     create: {
       email: 'alice@prisma.io',
-      lastname: 'Doe',
-      firstname: 'Alice',
-      code: 'A123',
+      name: 'Alice',
+      password: 'A123',
       createdAt: new Date('2025-04-19') // Fournir une instance de Date
     },
   })
@@ -18,10 +17,9 @@ async function main() {
     where: { email: 'bob@prisma.io' },
     update: {},
     create: {
-      email: 'bob@prisma.io',
-      lastname: 'Smith',
+     name: 'Bob',
       firstname: 'Bob',
-      code: 'B456',
+      password: 'B456',
       createdAt: new Date('2025-04-19') // Fournir une instance de Date
     },
   })
